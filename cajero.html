@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Cajero Automatico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="datos-cliente"> 
+    <h1 id="titulo">Cajero ProspePlata </h1>
+    <div id="cuentas">
+      <div>
+        <h2>Cliente Uno</h2>
+        <input type="password" id="password-uno" placeholder="Ingrese contraseña">
+        <button class="ingresar" data-cuenta="uno">Ingresar</button>
+      </div>
+      <div>
+        <h2>Cliente Dos</h2>
+        <input type="password" id="password-dos" placeholder="Ingrese contraseña">
+        <button class="ingresar" data-cuenta="dos">Ingresar</button>
+      </div>
+      <div>
+        <h2>Cliente Tres</h2>
+        <input type="password" id="password-tres" placeholder="Ingrese contraseña">
+        <button class="ingresar" data-cuenta="tres">Ingresar</button>
+      </div>
+    </div>
+    <div id="operaciones" class="ocultar">
+      <h2>Operaciones:</h2>
+      <button id="saldo">Consultar saldo</button>
+      <button id="ingreso">Ingresar monto</button>
+      <button id="retiro">Retirar monto</button>
+      <p id="nombre-cuenta"></p>
+      <button id="salir">Salir</button>
+    </div>
+    <div id="consulta-saldo" class="ocultar">
+      <h2>Saldo Actual:</h2>
+      <p id="saldo-actual"></p>
+      <button id="volver">Volver</button>
+    </div>
+    <div id="resultado" class="ocultar">
+      <h2>Resultado:</h2>
+      <p id="mensaje"></p>
+      <p id="saldo-final"></p>
+      <button id="volver-operaciones">Volver a Operaciones</button>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
